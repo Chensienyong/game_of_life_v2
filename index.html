@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Game of Life</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link id="cssTheme" rel="stylesheet" href="./public/stylesheets/base.css"/>
+    <link rel="icon" type="image/png" href="./public/icons/favicon-32x32.png"/>
+  </head>
+  <body>
+    <div id="navbarDiv">
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Game of Life</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="adjustSpeed" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Speed: Fast
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
+                  <li id='adjustFast'><a class="dropdown-item" href="#">Fast</a></li>
+                  <li id='adjustAverage'><a class="dropdown-item" href="#">Average</a></li>
+                  <li id='adjustSlow'><a class="dropdown-item" href="#">Slow</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="buttonDiv">
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-menu bg-dark">
+        <div class="d-grid col-12 mx-auto">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-6 col-6 d-flex justify-content-center button-container">
+                <div class="btn-group">
+                  <button class="btn btn-dark btn-lg dropdown-toggle" id="boardStyle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Gosper Glider Gun
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarScrollingDropdown">
+                    <li id='clearBoard'><a class="dropdown-item" href="#">Clear Board</a></li>
+                    <li id='ggg'><a class="dropdown-item" href="#">Gosper Glider Gun</a></li>
+                    <li id='doubleggg'><a class="dropdown-item" href="#">Double GGG</a></li>
+                    <li id='10enginecordership'><a class="dropdown-item" href="#">10 Engine Corder Ship</a></li>
+                    <li id='101'><a class="dropdown-item" href="#">101</a></li>
+                    <li id='spacefiller'><a class="dropdown-item" href="#">Spacefiller</a></li>
+                    <li id='3enginecordershiprake'><a class="dropdown-item" href="#">3 Engine Cordership rake</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-6 d-flex justify-content-center button-container">
+                <button id="startButton" type="button" class="btn btn-light">Start</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="main">
+      <div id="container">
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script src="./public/scripts/bundle.js"></script>
+</html>

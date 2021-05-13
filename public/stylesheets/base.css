@@ -1,0 +1,70 @@
+body, html {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+#container {
+  border-collapse: collapse;
+  display:block;
+  margin-left: 5px;
+  margin-right: 5px;
+  position: relative;
+  width: 90vw;
+  height: 80vh;
+  margin: 0 auto;
+}
+
+canvas {
+  border: 2px solid black;
+}
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.72222;
+  color: #34495e;
+  background-color: #E6E0D4;
+}
+
+#main {
+  position: center;
+  margin: 20px 0;
+}
+
+.navbar-dark .navbar-brand {
+  color: #5c6874;
+  font-size: 20px;
+  line-height: 1.042;
+  height: 50px;
+  font-weight: 700;
+  padding: 14px 21px;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: #1abc9c;
+  background-color: transparent;
+}
+
+.navbar-top {
+  background-color: #141414;
+}
+
+.colorized-button {
+  margin: 0 20px;
+  background-color: #00adb5;
+}
+
+#buttonDiv button {
+  font-size: 17px;
+}
+
+.navbar-menu .button-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button:disabled {
+  background-color: transparent !important;
+}
